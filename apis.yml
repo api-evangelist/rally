@@ -1,8 +1,28 @@
 aid: rally
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rally.png
 name: Rally
-description: 'Rally is a company surfaced as a portfolio company of accel, techstars and added to the
-  API Evangelist network as a stub for enrichment. Sector: ecommerce. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Rally (Rally Rd.) is an alternative-asset investing platform that lets everyday
+  investors buy and sell equity shares in individual collectible assets — classic
+  cars, watches, fine art, wine, sports memorabilia, trading cards, and other rare
+  items. Rally sources and authenticates each item, files it with the SEC as a
+  regulated offering, splits it into shares in an Initial Offering, and then opens
+  a Bid/Ask secondary market roughly 90 days later so shareholders can trade.
+  Founded in 2016 and headquartered in New York, Rally runs iOS, Android, and web
+  apps and raised a $30M Series B led by Accel in 2021. Rally publishes no public
+  developer API, SDKs, or documentation surface; this profile captures its identity
+  and probed domain-security posture.
 url: https://raw.githubusercontent.com/api-evangelist/rally/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +33,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Ecommerce
+- Alternative Assets
+- Investing
+- Collectibles
+- Fractional Ownership
+- Fintech
+- Marketplace
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +50,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/rally-domain-security.yml
 - type: Website
   url: https://rallyrd.com/
+- type: Support
+  url: https://rallyrd.com/faq/
+- type: Blog
+  url: https://rallyrd.com/stories-by-rally/
+- type: SignUp
+  url: https://app.rallyrd.com/login
+- type: TermsOfService
+  url: https://rallyrd.com/privacy/
+- type: PrivacyPolicy
+  url: https://rallyrd.com/privacy/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
